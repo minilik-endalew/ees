@@ -1,0 +1,31 @@
+<?php
+
+class DBConnection {
+    public function __construct(){}
+    public function connect()
+    {
+        
+        $server = "localhost";
+        $username = "root";
+        $password = "";
+		
+        $connection = mysql_connect($server, $username, $password)or die("connection error ".mysqli_error($link));
+		mysql_select_db("aau",$connection) or die("DB Selection Error: ".mysqli_error($link));
+        return $connection;
+    }
+
+    public  function executeQuery($query)
+    {
+        $dbConnection = DBConnection::connect();        
+        mysql_select_db("aau", $dbConnection);
+        $result = mysqli_query($link,$query);
+        return $result;
+    }
+
+    public  function readFromDatabase($query)/*returns the records read from the database*/
+    {    	  
+        $result = DBConnection::executeQuery($query);
+        return $result;
+    }
+}//end class
+?>
