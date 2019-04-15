@@ -263,11 +263,6 @@ INSERT INTO `question` (`ID`, `Type`, `Question`, `Instructor`, `Remark`) VALUES
 (61, 'Analytic', 'Find the next number in the sequence: 48,-24,12,-6,?', 2, ''),
 (63, 'English', 'this is a test question ______', 2, ''),
 (74, 'English', 'another sample', 2, ''),
-(85, 'English', 'ewewe', 2, ''),
-(86, 'English', 'rty', 2, ''),
-(87, 'English', 'uyuyu', 2, ''),
-(91, 'English', 'sdf', 0, ''),
-(92, 'English', 'sdf', 2, ''),
 (93, 'English', 'cv', 2, '');
 
 -- --------------------------------------------------------
@@ -329,13 +324,7 @@ CREATE TABLE IF NOT EXISTS `user` (
 --
 
 INSERT INTO `user` (`ID`, `First_Name`, `Middle_Name`, `Last_Name`, `Roll`, `Email`, `User_Name`, `Password`, `Active`, `Remark`) VALUES
-(1, 'Minilik', 'Tesfaye', 'Endalew', 'Administrator', '', 'millo', 'e8807c7ff903b7a584c7856863624d7d', 'Yes', ''),
-(2, 'instFN', 'instMN', 'instLN', 'Instructor', '', 'inst', '183224d27b72b647391e179fa311b891', 'Yes', ''),
-(3, 'Tewodros', 'Belay', 'Aligaz', 'Instructor', 'tola@yahoo.com', 'teddy', '962b2d2b8e72dc6771bca613d49b46fb', 'Yes', 'Found cheating '),
-(4, 'tolosa', 'gemechis', 'gurmessa', 'Examinee', 'tola@yahoo.com', 'tola@yahoo.com', 'ad50ce09d2cae59102a31c1e6034fcb9', 'No', ''),
-(5, 'debesay', 'tekie', 'hagos', 'Examinee', 'debesay@yahoo.com', 'debesay@yahoo.com', 'c5aefea68f20755f469c77a7e2717cbf', 'Yes', ''),
-(6, 'Zinash', 'Teklu', 'Tekola', 'Examinee', 'zin@yahoo.com', 'zin@yahoo.com', '7b8a5495fb3fab72e421fa5f1e80bb95', 'No', ''),
-(7, 'Munir', 'Jemal', 'Mussa', 'Examinee', 'munir@yahoo.com', 'munir@yahoo.com', 'ec83c3ce4c0288ad7868947965b8847c', 'Yes', '');
+(1, 'Minilik', 'Tesfaye', 'Endalew', 'Administrator', '', 'millo', 'e8807c7ff903b7a584c7856863624d7d', 'Yes', '');
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
